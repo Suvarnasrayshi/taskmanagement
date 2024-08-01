@@ -1,0 +1,25 @@
+create of task
+update the task
+delete the task
+make the type of task like regular,urgent
+track the task  to-do, in-progress, and completed stages.
+reminder through the email when deadline is there
+Each user has a personalized dashboard that displays an overview of their tasks, upcoming deadlines, and recent activity.
+Users can update task statuses
+archive the task when completed
+
+
+
+user:
+name,email,password,createdat,updatedat,deletedat
+task:
+taskid,userid,name, description, due date,status,media,createdat,updatedat,deletedat
+typeoftask:(regular,urgent)
+typeoftaskid,taskid,typeoftask,createdat,updatedat,deletedat
+report:
+reportid,taskid,duedate,filepath,createdat,updatedat,deletedat
+
+
+many-one(user,task)
+one-one(task,typeoftask)
+https://github.com/Suvarnasrayshi/taskmanagement.git
